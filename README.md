@@ -7,7 +7,7 @@ pkg install git
 git clone https://github.com/AltKn1ght/APDC
 ```
 ```
-pkg install py 
+pkg install python
 ```
 ```
 apt upgrade && update 

@@ -4,11 +4,13 @@ import requests
 from colorama import Fore
 
 print("ExCL x AltKn1ght\nScript : AutoPOST Discord\nSpecial Credits for Bang Pateng")
-Channel = int(input("Input the ID channel for posting your messages : "))
 Delay = int(input("Input the Sending message delay : "))
 
 os.system('cls' if os.name == 'nt' else 'clear')
 
+with open("APChannel.txt", "r") as f:
+    Channel = f.readline().strip()
+    
 with open("APMessage.txt", "r") as f:
     Text = f.read()
 
@@ -16,7 +18,6 @@ with open("APAccount.txt", "r") as f:
     Authorization = f.readline().strip() 
 
 while True:
-    Channel = str(Channel).strip() 
     payload = {
         'content': Text
     }

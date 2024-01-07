@@ -10,15 +10,15 @@ Delay = int(input("Input the Sending message delay : "))
 os.system('cls' if os.name == 'nt' else 'clear')
 
 with open("APMessage.txt", "r") as f:
-    Text = f.readline().strip()  # Use readline() instead of readlines() to get a single line
+    Text = f.readlines()
 
 with open("APAccount.txt", "r") as f:
-    Authorization = f.readline().strip()  # Use readline() instead of readlines() to get a single line
+    Authorization = f.readline().strip() 
 
 while True:
-    Channel = str(Channel).strip()  # Convert Channel to string before stripping
+    Channel = str(Channel).strip() 
     payload = {
-        'content': Text  # Changed 'Content' to 'content' for payload
+        'content': Text
     }
     headers = {
         'Authorization': Authorization

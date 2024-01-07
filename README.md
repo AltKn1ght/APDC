@@ -22,5 +22,5 @@ pip install requests colorama
 cd APDC 
 ```
 ``` 
-python main.py
+python APDC.py
 ```

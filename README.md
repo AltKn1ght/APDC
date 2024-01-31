@@ -1,4 +1,4 @@
-# Before Running, Install all of this in your Termux.
+#Before Running, Install all of this in your Termux.
 Note : ONE BY ONE
 ``` 
 pkg install git

@@ -13,9 +13,6 @@ pkg install python
 apt upgrade && update 
 ```
 ``` 
-pkg install openssl
-```
-``` 
 pip install requests colorama
 ```
 ```
